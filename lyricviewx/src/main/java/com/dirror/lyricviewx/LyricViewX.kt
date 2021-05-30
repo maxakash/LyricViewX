@@ -26,6 +26,8 @@ import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.concurrent.thread
 import kotlin.math.abs
+import android.graphics.Typeface
+
 
 /**
  * LyricViewX
@@ -312,6 +314,13 @@ class LyricViewX @JvmOverloads constructor(context: Context?, attrs: AttributeSe
                 }
             }
             return super.onSingleTapConfirmed(e)
+        }
+    }
+    
+    
+  fun setTypeFace(typeface: Typeface) {
+        if (lyricPaint!= null) {
+            lyricPaint.setTypeface(typeface)
         }
     }
 
